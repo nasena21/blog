@@ -25,13 +25,18 @@ const style = Astro.props.style;
 <WidgetLayout name={i18n(I18nKey.categories)} id="categories" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT}
                 class={className} style={style}
 >
-    {categories.map((c) =>
-        <ButtonLink
-            url={getCategoryUrl(c.name.trim())}
-            badge={String(c.count)}
-            label={`View all posts in the ${c.name.trim()} category`}
-        >
-            {c.name.trim()}
-        </ButtonLink>
-    )}
+  {categories.map((c) => {
+    const rawName = c.name.trim();                       // e.g. "japanese-language"
+    const displayName = rawName.replace(/-/g, " ");      // → "japanese language"
+
+    return (
+      <ButtonLink
+        url={getCategoryUrl(rawName)}                    // still uses the slug
+        badge={String(c.count)}
+        label={`View all posts in the ${displayName} category`}
+      >
+        {displayName}
+      </ButtonLink>
+    );
+  })}
 </WidgetLayout>

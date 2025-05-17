@@ -3,7 +3,7 @@ title: Jenis-Jenis Kalimat di Bahasa Jepang
 published: 2025-05-17
 description: Kalimat di bahasa Jepang dapat dibagi menjadi empat jenis berdasarkan predikatnya
 tags: [Kalimat, Grammar]
-category: Bahasa%20Jepang
+category: Bahasa-Jepang
 draft: false
 ---
 

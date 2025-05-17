@@ -26,12 +26,12 @@ const style = Astro.props.style;
                 class={className} style={style}
 >
   {categories.map((c) => {
-    const rawName = c.name.trim();                       // e.g. "japanese-language"
-    const displayName = rawName.replace(/-/g, " ");      // → "japanese language"
+    const rawName = c.name.trim();                    
+    const displayName = rawName.replace(/-/g, " ");     
 
     return (
       <ButtonLink
-        url={getCategoryUrl(rawName)}                    // still uses the slug
+        url={getCategoryUrl(rawName)}             
         badge={String(c.count)}
         label={`View all posts in the ${displayName} category`}
       >

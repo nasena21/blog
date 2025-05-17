@@ -1,0 +1,23 @@
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/content/posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    nested:
+      depth: 100  # How deep to scan for files (adjust as needed)
+      summary: "{{title}} ({{dirname}})"  # How to display in UI
+    fields: # The fields for each document, usually in frontmatter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Draft", name: "draft", widget: "boolean" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "published", widget: "datetime" }
+      - { label: "tags", name: "tags", widget: "list" }
+      - { label: "category", name: "category", widget: "list" }
+      - { label: "description", name: "description", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+media_folder: "src/assets/images" # Location where files will be stored in the repo
+public_folder: "src/assets/images" # The src attribute for uploaded media  
+backend:
+  name: github
+  repo: nasena21/blog

@@ -1,10 +1,14 @@
 ---
+draft: false
 title: Jenis-Jenis Kalimat di Bahasa Jepang
 published: 2025-05-17
-description: Kalimat di bahasa Jepang dapat dibagi menjadi empat jenis berdasarkan predikatnya
-tags: [Kalimat, Grammar]
+tags:
+  - Kalimat
+  - Grammar
 category: Bahasa-Jepang
-draft: false
+description: Kalimat di bahasa Jepang dapat dibagi menjadi empat jenis
+  berdasarkan predikatnya
+image: src/assets/images/demo-banner.png
 ---
 
 Struktur kalimat paling sederhana di bahasa Jepang hanya memerlukan subjek dan predikat. Predikat terdiri dari tiga jenis, yaitu kata kerja, kata sifat dan copula だ atau です.
